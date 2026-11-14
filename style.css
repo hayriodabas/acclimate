@@ -1,0 +1,16 @@
+/* Acclimate pages: white ground, dark ink, the app's own colours. No scripts, no fonts or files loaded from elsewhere. */
+:root { --ink: #15141A; --muted: #6B6873; --ground: #FFFFFF; --hair: #E8E6EC; --teal: #2EE6C5; --pistachio: #B6E36A; --acid: #F2FF52; --jade-soft: #D4F7EA; }
+@media (prefers-color-scheme: dark) { :root { --ink: #F4F3F7; --muted: #A29FAC; --ground: #0E0E11; --hair: #2B2A31; --jade-soft: #103A2D; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--ground); color: var(--ink); font: 17px/1.55 -apple-system, "Helvetica Neue", "Segoe UI", sans-serif; }
+header { background: var(--acid); color: #15141A; padding: 28px 20px 46px; }
+header .mark { font-weight: 800; font-size: 21px; letter-spacing: -0.03em; }
+header h1 { margin: 26px 0 0; font-size: 38px; line-height: 1.02; letter-spacing: -0.04em; max-width: 18ch; }
+main { max-width: 680px; margin: -22px auto 0; padding: 26px 20px 60px; background: var(--ground); border-radius: 26px 26px 0 0; }
+h2 { font-size: 21px; letter-spacing: -0.02em; margin: 34px 0 6px; padding-top: 14px; border-top: 1.5px solid var(--ink); }
+p, li { margin: 8px 0; }
+ul { padding-left: 20px; }
+.short { background: var(--jade-soft); border-radius: 18px; padding: 14px 16px; margin: 0 0 8px; }
+.small, footer { color: var(--muted); font-size: 14px; }
+a { color: inherit; }
+nav { margin-top: 30px; display: flex; gap: 18px; flex-wrap: wrap; font-weight: 600; }
